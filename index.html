@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="الموقع الشخصي لأميرة محمد: مطوّرة واجهات أمامية — HTML وCSS وBootstrap وJavaScript">
+  <title>أميرة محمد | مطوّرة واجهات أمامية</title>
+
+  <!-- Bootstrap 5 (RTL) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90">
+
+  <!-- ================= Navbar ================= -->
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">أميرة</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="فتح القائمة">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#home">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">من أنا</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">المهارات</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">المشاريع</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume">السيرة الذاتية</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">تواصل معي</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= Hero ================= -->
+  <header id="home" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 text-center text-lg-start-rtl">
+          <p class="hero-hello mb-2">👋 مرحباً، أنا</p>
+          <h1 class="hero-title">أميرة محمد</h1>
+          <h2 class="hero-sub">مطوّرة <span class="text-accent">واجهات أمامية</span> شغوفة ببناء تجارب رقمية جميلة</h2>
+          <p class="lead text-muted-light my-4">
+            أصمّم وأبني مواقع متجاوبة وسريعة باستخدام HTML وCSS وBootstrap وJavaScript،
+            وأتعلم كل يوم شيئاً جديداً في عالم تطوير الويب.
+          </p>
+          <div class="d-flex gap-3 justify-content-center justify-content-lg-start flex-wrap">
+            <a href="#projects" class="btn btn-accent btn-lg">شاهد أعمالي</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">تواصل معي</a>
+          </div>
+          <div class="social mt-4">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+                class="bi bi-linkedin"></i></a>
+            <a href="mailto:amiramohammed767@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+            <a href="tel:+201067321510" aria-label="Phone"><i class="bi bi-telephone-fill"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center">
+          <div class="avatar-wrap">
+            <img src="images/logo.png" alt="صورة أميرة محمد" class="avatar img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= About ================= -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">من <span class="text-accent">أنا</span></h2>
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <p>
+            مطوّرة واجهات أمامية، طالبة بكالوريوس نظم المعلومات بجامعة الدلتا للعلوم والتكنولوجيا.
+            أهتم بتطوير الواجهات الأمامية وتصميم تجربة المستخدم، وأحب تحويل الأفكار إلى صفحات ويب عملية وجذابة.
+          </p>
+          <p>
+            أسعى لتطوير مهاراتي من خلال المشاريع الحقيقية، وأبحث عن فرصة تدريب لأطبّق فيها ما تعلمته وأكتسب خبرة عملية
+            في تطوير الويب.
+          </p>
+          <ul class="list-unstyled info-list mt-4">
+            <li><i class="bi bi-person-fill"></i> <strong>الاسم:</strong> أميرة محمد</li>
+            <li><i class="bi bi-geo-alt-fill"></i> <strong>المدينة:</strong> القاهرة، مصر</li>
+            <li><i class="bi bi-mortarboard-fill"></i> <strong>التخصص:</strong> نظم المعلومات</li>
+            <li><i class="bi bi-envelope-fill"></i> <strong>البريد:</strong> amiramohammed767@gmail.com</li>
+            <li><i class="bi bi-telephone-fill"></i> <strong>الهاتف:</strong> <span dir="ltr">+20 106 732 1510</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-5">
+          <div class="row g-3 text-center">
+            <div class="col-4">
+              <div class="stat"><span>5+</span>مشاريع</div>
+            </div>
+            <div class="col-4">
+              <div class="stat"><span>3</span>شهادات</div>
+            </div>
+            <div class="col-4">
+              <div class="stat"><span>2</span>سنوات تعلّم</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Skills ================= -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">مهاراتي <span class="text-accent">التقنية</span></h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="skill">
+            <div class="d-flex justify-content-between"><span>HTML5</span><span>90%</span></div>
+            <div class="progress" role="progressbar" aria-label="HTML5" aria-valuenow="90" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="d-flex justify-content-between"><span>CSS3</span><span>85%</span></div>
+            <div class="progress" role="progressbar" aria-label="CSS3" aria-valuenow="85" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="d-flex justify-content-between"><span>Bootstrap</span><span>80%</span></div>
+            <div class="progress" role="progressbar" aria-label="Bootstrap" aria-valuenow="80" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar" style="width: 80%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="skill">
+            <div class="d-flex justify-content-between"><span>JavaScript (أساسيات)</span><span>60%</span></div>
+            <div class="progress" role="progressbar" aria-label="JavaScript" aria-valuenow="60" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar" style="width: 60%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="d-flex justify-content-between"><span>Git &amp; GitHub</span><span>70%</span></div>
+            <div class="progress" role="progressbar" aria-label="Git" aria-valuenow="70" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar" style="width: 70%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="d-flex justify-content-between"><span>Responsive Design</span><span>85%</span></div>
+            <div class="progress" role="progressbar" aria-label="Responsive" aria-valuenow="85" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <span class="badge tag">التواصل</span>
+        <span class="badge tag">العمل الجماعي</span>
+        <span class="badge tag">حل المشكلات</span>
+        <span class="badge tag">إدارة الوقت</span>
+        <span class="badge tag">التعلّم الذاتي</span>
+        <span class="badge tag">الإبداع في التصميم</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Projects ================= -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">سابقة <span class="text-accent">أعمالي</span></h2>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100">
+            <div class="project-thumb"><i class="bi bi-shop"></i></div>
+            <div class="card-body">
+              <h5 class="card-title">متجر إلكتروني</h5>
+              <p class="card-text">واجهة متجر متجاوبة تعرض المنتجات والسلة باستخدام Bootstrap.</p>
+              <span class="badge tag">HTML</span> <span class="badge tag">CSS</span> <span
+                class="badge tag">Bootstrap</span>
+            </div>
+            <div class="card-footer border-0 bg-transparent">
+              <a href="#" class="btn btn-sm btn-outline-accent"><i class="bi bi-github"></i> الكود</a>
+              <a href="#" class="btn btn-sm btn-accent"><i class="bi bi-box-arrow-up-right"></i> معاينة</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100">
+            <div class="project-thumb"><i class="bi bi-check2-square"></i></div>
+            <div class="card-body">
+              <h5 class="card-title">تطبيق قائمة المهام</h5>
+              <p class="card-text">تطبيق بسيط لإدارة المهام اليومية مع إضافة وحذف وتعليم المهام المنجزة.</p>
+              <span class="badge tag">HTML</span> <span class="badge tag">CSS</span> <span
+                class="badge tag">JavaScript</span>
+            </div>
+            <div class="card-footer border-0 bg-transparent">
+              <a href="#" class="btn btn-sm btn-outline-accent"><i class="bi bi-github"></i> الكود</a>
+              <a href="#" class="btn btn-sm btn-accent"><i class="bi bi-box-arrow-up-right"></i> معاينة</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100">
+            <div class="project-thumb"><i class="bi bi-cloud-sun"></i></div>
+            <div class="card-body">
+              <h5 class="card-title">صفحة حالة الطقس</h5>
+              <p class="card-text">صفحة تعرض حالة الطقس بتصميم عصري ومتجاوب مع جميع الأجهزة.</p>
+              <span class="badge tag">HTML</span> <span class="badge tag">CSS</span> <span class="badge tag">API</span>
+            </div>
+            <div class="card-footer border-0 bg-transparent">
+              <a href="#" class="btn btn-sm btn-outline-accent"><i class="bi bi-github"></i> الكود</a>
+              <a href="#" class="btn btn-sm btn-accent"><i class="bi bi-box-arrow-up-right"></i> معاينة</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Resume ================= -->
+  <section id="resume" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">السيرة <span class="text-accent">الذاتية</span></h2>
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <h4 class="mb-4"><i class="bi bi-mortarboard text-accent"></i> التعليم</h4>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="year">2022 – 2026</span>
+              <h6>بكالوريوس نظم المعلومات</h6>
+              <p>جامعة الدلتا للعلوم والتكنولوجيا – تحليل البيانات ونظم المعلومات والأساسيات الرقمية</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h4 class="mb-4"><i class="bi bi-briefcase text-accent"></i> الخبرة المهنية</h4>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="year">2024 – الآن</span>
+              <h6>أخصائية تسويق رقمي وشراء إعلانات (فريلانس)</h6>
+              <p>القاهرة، مصر — تطوير وتنفيذ حملات سوشيال ميديا، إدارة ميزانيات الإعلانات المدفوعة، اختبار A/B، وإعداد
+                تقارير الأداء.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Contact ================= -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">تواصل <span class="text-accent">معي</span></h2>
+      <div class="row g-5 justify-content-center">
+        <div class="col-lg-4">
+          <ul class="list-unstyled info-list">
+            <li><i class="bi bi-envelope-fill"></i> amiramohammed767@gmail.com</li>
+            <li><i class="bi bi-telephone-fill"></i> <span dir="ltr">+20 106 732 1510</span></li>
+            <li><i class="bi bi-geo-alt-fill"></i> القاهرة، مصر</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <form action="mailto:amiramohammed767@gmail.com" method="post" enctype="text/plain">
+            <div class="mb-3">
+              <label for="name" class="form-label">الاسم</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">البريد الإلكتروني</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="msg" class="form-label">الرسالة</label>
+              <textarea class="form-control" id="msg" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-accent w-100">إرسال</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Footer ================= -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p class="mb-1">© 2026 أميرة محمد. جميع الحقوق محفوظة.</p>
+      <small>صُمّم بـ HTML &amp; CSS &amp; Bootstrap</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
